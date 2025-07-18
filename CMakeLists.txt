@@ -8,4 +8,5 @@ project(euler)
 # 添加源文件到 app target
 target_sources(app PRIVATE
     src/main.c
+    src/bsp_stm32_can.c
 )
