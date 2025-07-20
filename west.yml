@@ -23,6 +23,7 @@ manifest:
           - cmsis-dsp
           - hal_stm32
           - segger
+          - zcbor
     - name: ProtocolV4
       path: modules/lib/ProtocolV4
       submodules: true
