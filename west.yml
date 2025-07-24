@@ -11,7 +11,7 @@ manifest:
   defaults:
     remote: origin
     revision: master
-
+   
   projects:
     - name: zephyr
       remote: github
@@ -51,3 +51,10 @@ manifest:
       path: syrius-boards/
       remote: origin  # 改为存在的 remote
       revision: master
+
+    # 添加 canopennode 项目（关键修改）
+    - name: canopennode
+      remote: github
+      repo-path: zephyrproject-rtos/canopennode
+      revision: master  # 推荐使用兼容 v4.1.0 的版本
+      path: modules/lib/canopennode  # 统一放在 modules/lib 目录 
