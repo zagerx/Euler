@@ -16,7 +16,8 @@ manifest:
     - name: zephyr
       remote: github
       repo-path: zephyrproject-rtos/zephyr
-      revision: v4.2.0
+      revision: v4.1.0
+      import: submanifests
       import:
         name-allowlist:
           - cmsis
@@ -24,6 +25,7 @@ manifest:
           - hal_stm32
           - segger
           - zcbor
+          - canopennode
     - name: ProtocolV4
       path: modules/lib/ProtocolV4
       submodules: true
