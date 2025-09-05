@@ -3,3 +3,6 @@
 
 config BOARD_ZGM_001
 	select SOC_STM32G431XX
+    	select USE_STM32_LL_TIM
+	select USE_STM32_LL_RCC
+    	select USE_STM32_LL_ADC    
